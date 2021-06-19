@@ -42,7 +42,7 @@ const Message = () => {
         !friend &&
             (async () => {
                 try {
-                    const { data } = await axios.get(`/user/${friend_id}.json`);
+                    const { data } = await axios.get(`https://vegiw.herokuapp.com/user/${friend_id}.json`);
                     const { user } = data;
                     user.id = friend_id;
                     if (data.ownProfile) {
