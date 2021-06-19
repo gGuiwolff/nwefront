@@ -31,7 +31,7 @@ const ListImageFeed = ({ history, match, classes }) => {
                     history.push("/");
                 }*/
                   try {
-                      const res = await axios.get(`/otherfeed/${id}.json`);
+                      const res = await axios.get(`https://vegiw.herokuapp.com/otherfeed/${id}.json`);
                       //const res2 = await axios.get(`/post`);
 
                       const { data } = res;
