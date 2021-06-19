@@ -15,8 +15,8 @@ export function ListImageFeed(){
   
     const getPictues = async () => {
       try {
-        const res = await axios.get("/listfeedimages");
-        const ids = await axios.get("/listfeedimagesid");
+        const res = await axios.get("https://vegiw.herokuapp.com/listfeedimages");
+        const ids = await axios.get("https://vegiw.herokuapp.com/listfeedimagesid");
         console.log('[MEU RES LISTANDO]',res)
         //const parseData = await res.json();
         console.log('[TESTE RES]',ids)
