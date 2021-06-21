@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { instance } from "../axios";
+import axios from "../axios";
 
 const useAuthSubmit = (url, values, reset, secondUrl) => {
     const [progress, setProgress] = useState({
@@ -17,8 +17,8 @@ const useAuthSubmit = (url, values, reset, secondUrl) => {
         }));
         try {
             progress.step === 1
-                ? await instance.post(url, values)
-                : await instance.post(secondUrl, values);
+                ? await axios.post(url, values)
+                : await axios.post(secondUrl, values);
             !reset
                 ? location.replace("/")
                 : setProgress((prevState) => ({
