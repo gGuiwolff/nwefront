@@ -23,6 +23,7 @@ module.exports = () => ({
             "/": {
                 target: "https://veg2.herokuapp.com",
                 secure: false,
+                changeOrigin: true,
             },
             "/socket.io": {
                 target: "https://veg2.herokuapp.com",
