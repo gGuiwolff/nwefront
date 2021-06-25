@@ -8,7 +8,7 @@ import FriendButton from "./FriendButton";
 import { useDispatch, useSelector } from "react-redux";
 import "./styles/images.css"
 
-const IndividualPost = () => {
+const IndividualPost = ({ match }) => {
     const dispatch = useDispatch();
     const { id } = match.params;
     const user = useSelector(({ contacts }) => contacts[id]);
