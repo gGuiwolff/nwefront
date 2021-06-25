@@ -21,11 +21,11 @@ module.exports = () => ({
         publicPath: '/',
         proxy: {
             "/": {
-                target: "https://vegiw.herokuapp.com",
+                target: "https://veg2.herokuapp.com",
                 secure: false,
             },
             "/socket.io": {
-                target: "https://vegiw.herokuapp.com",
+                target: "https://veg2.herokuapp.com",
                 secure: false,
             },
         },
